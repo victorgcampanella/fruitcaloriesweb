@@ -1,46 +1,48 @@
 import styled from 'styled-components'
 
+import resLayout from "../../utils/resLayout";
+
 export const Title = styled.h1`
   display: flex;
-  font-size: 48px;
+  font-size: ${resLayout(48)};
   color: #3a3a3a;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: ${resLayout(20)};
 `;
 
 export const Card = styled.div`
   background-color: #378C52;
   width: 100%;
   height: max-content;
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: ${resLayout(20)};
+  padding: ${resLayout(20)};
 `;
 
 export const ContainerFruit = styled.div`
   align-items: center;
   display: block;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 20px;
+  border-radius: ${resLayout(20)};
+  margin-top: ${resLayout(20)};
+  padding: ${resLayout(20)};
   background-color: #CEF0D9;
 `;
 
 export const Name = styled.h1`
   color: #081A0E;
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: ${resLayout(40)};
+  margin-bottom: ${resLayout(15)};
 `;
 
 export const ContainerInfos = styled.div`
   background-color: #B4EEC6;
-  padding: 20px;
-  border-radius: 20px;
+  padding: ${resLayout(20)};
+  border-radius: ${resLayout(20)};
 `;
 
 export const Infos = styled.h1`
  font-weight: bold;
- font-size: 24px;
+ font-size: ${resLayout(24)};
  color: #5a5a5a;
 `;
 
@@ -53,5 +55,5 @@ export const ContainerImage = styled.div`
 export const Image = styled.img`
   width: 50%;
   height: 50%;
-  border-radius: 20px;
+  border-radius: ${resLayout(20)};
 `;

@@ -1,6 +1,7 @@
 import {createGlobalStyle} from 'styled-components';
 
 import fruitsBackground from '../assets/fruits_back.png'
+import resLayout from "../utils/resLayout";
 
 export default createGlobalStyle`
   * {
@@ -19,13 +20,22 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 16px Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
+    font-size: ${resLayout(16)} Roboto, sans-serif;
+
+    @media (min-width: 768px) {
+      font-size: ${resLayout(18)};
+    }
+
+    @media (min-width: 1024px) {
+      font-size: ${resLayout(16)};
+    }
   }
 
   #root {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: ${resLayout(960)};
+    margin: ${resLayout(0)} auto;
+    padding: ${resLayout(40)} ${resLayout(20)};
   }
 
   button {
