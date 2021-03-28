@@ -17,6 +17,10 @@ export default createGlobalStyle`
     background-repeat: round;
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
+
+   @media (max-width: 768px) {
+    background: #BEEDCD;
+   }
   }
 
   body, input, button {
@@ -35,7 +39,21 @@ export default createGlobalStyle`
   #root {
     max-width: ${resLayout(960)};
     margin: ${resLayout(0)} auto;
-    padding: ${resLayout(40)} ${resLayout(20)};
+    padding: ${resLayout(30)} ${resLayout(10)};
+
+    @media (min-width: 2560px) {
+      max-width: 1440px;
+      padding: 30px 0px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 700px;
+      padding: 30px 0px;
+    }
+
+    @media (max-width: 425px) {
+      padding: 30px 20px;
+    }
   }
 
   button {
